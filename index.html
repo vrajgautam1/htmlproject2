@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Wireframe using HTML Table and HTML5 Elements</title>
+    <style>
+        body{
+            font-family:sans-serif;
+        }
+        .table2{
+            margin-top:20px;
+            /* display: inline-block; */
+            box-sizing: border-box;
+            height: 330px;
+            flex: 3 0 0;
+        }
+
+        .table3{
+            margin-top: 20px;
+            flex:1 0 0;
+        }
+
+        .innertable{
+            margin-bottom: 10px;
+        }
+
+        .article{
+            padding-bottom: 0px;
+        }
+
+        .section{
+            padding-bottom:50px;
+        }
+
+        span{
+        margin-top:10px;
+        display: inline-block;
+        }  
+
+        .sidebyside-container{
+            display: flex;
+            gap: 20px;
+            width:100%;
+        }
+
+        .internaltable{
+            margin-bottom: 10px;
+        }
+
+        .table4{
+            margin-top: 10px;
+        }
+
+        .table1{
+            font-weight: bold;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+ <header>  
+ <table width="100%" cellspacing="0" cellpadding="15" border="1" class="table1">
+    <tr>
+        <td>
+            header
+            <table width="100%" cellspacing="0" cellpadding="5" border="1">
+                <tr>
+                    <td>
+                        nav
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+ </table>
+</header> 
+
+<main>
+ <div class="sidebyside-container">
+
+ <table cellpadding="15" cellspacing="0" border="1" class="table2" height="">
+    <tr>
+        <td class="section">
+            Section
+            <table width="100%" cellspacing="0" cellpadding="15" border="1">
+                <tr>
+                    <td class="article">
+                        article
+
+                        <table width="100%" cellspacing="0" cellpadding="15" border="1" class="innertable">
+                            <tr>
+                                <td>Header</td>
+                            </tr>
+                        </table>
+
+                        <table width="100%" cellspacing="0" cellpadding="15" border="1" class="innertable">
+                            <tr>
+                                <td>Main</td>
+                            </tr>
+                        </table>
+
+                        <table width="100%" cellspacing="0" cellpadding="15" border="1" class="innertable" id="footer">
+                            <tr>
+                                <td>Footer</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <span>...more articles...</span>
+        </td>
+    </tr>
+ </table>
+
+ <table  cellspacing="0" cellpadding="15" border="1" class="table3">
+    <tr>
+        <td class>
+            Section
+
+            <table width="100%" cellspacing="0" cellpadding="30" border="1" class="internaltable">
+                <tr>
+                    <td>Section</td>
+                </tr>
+            </table>
+
+            <table width="100%" cellspacing="0" cellpadding="30" border="1" class="internaltable">
+                <tr>
+                    <td>Section</td>
+                </tr>
+            </table>
+
+            <table width="100%" cellspacing="0" cellpadding="30" border="1" class="internaltable">
+                <tr>
+                    <td>Section</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</div>
+</main>
+
+<footer>
+    <table width="100%" cellspacing="0" cellpadding="15" border="1" class="table4">
+        <tr >
+            <td>Footer</td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>
